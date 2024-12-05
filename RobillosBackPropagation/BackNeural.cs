@@ -34,10 +34,7 @@ namespace Backprop
 			desiredout=new double[output];
 			createNeurons(ineuron.Length,hneuron.Length,oneuron.Length);
 		}
-        public string getNumbers()
-        {
-            return $"Input: {ineuron.Length}, Hidden: {hneuron.Length}, Output: {oneuron.Length}";
-        }
+
         public void createNeurons(int i,int h,int o)
 		{
 			for (int x=0;x<i;x++)

@@ -32,8 +32,9 @@ namespace RobillosBackPropagation
 
         private void createBtn_Click(object sender, EventArgs e)
         {
-            nn = new NeuralNet(4, 600, 1);
-            MessageBox.Show(nn.getNumbers());
+            int hiddenNeuron = 600;
+            nn = new NeuralNet(4, hiddenNeuron, 1);
+            MessageBox.Show($"Input: 4, Hidden: {hiddenNeuron}, Output: 1");
         }
 
         private void trainBtn_Click(object sender, EventArgs e)
